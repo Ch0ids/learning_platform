@@ -1,0 +1,5 @@
+Platform using:
+Repository Pattern,
+EF Core CodeFirst, 
+from Backend to Frontend: API -> WPF
+think about data from UI and database : https://ayende.com/blog/3955/repository-is-the-new-singleton (header of posts)
