@@ -7,10 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Services\Lesson\" />
+    <Folder Include="Services\Word\" />
     <Folder Include="Validators\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="Utils\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>

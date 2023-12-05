@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Repositories.LessonRepo
+namespace BLL.ViewModels.Word
 {
-    internal interface ILessonRepository
+    internal class DetailedWordResponse
     {
     }
 }
- 

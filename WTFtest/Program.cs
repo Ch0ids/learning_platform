@@ -1,15 +1,52 @@
-﻿var x = "abc";
-Console.WriteLine($"Hello, World! {x}");
-void tryCatch()
+﻿using System.Xml.Linq;
+
+var x = "Hiep";
+Console.WriteLine($"Hello, {x}");
+//async Task tryCatch()
+//{
+//    try
+//    {
+//        var text = (await File.ReadAllTextAsync("Note.txt")).Length;
+//        Console.WriteLine(text);
+//        throw new Exception($"{x}");
+//    }
+//    catch (Exception e)
+//    {
+//        throw new Exception(e.Message);
+//    }
+//}
+
+//await tryCatch();
+string test1 = "a";
+void TestIOrderedEnumerable()
 {
-    try
+    User newUser1 = new()
     {
-        Console.WriteLine("abcccc");
-        throw new Exception($"{x}");  
-    }
-    catch(Exception e)
+        Id = Guid.NewGuid(),
+        Name = "user1",
+        Password = "password",
+    };
+    User newUser2 = new()
+
     {
-        throw new Exception(e.Message);
-    }
+        Id = Guid.NewGuid(),
+        Name = "user2",
+        Password = "password",
+    };
+    Console.WriteLine(newUser1.Name + "\n" + newUser1.Password + "\n" + newUser1.Id.ToString());
+    Console.WriteLine("\n" + newUser2.Name + "\n" + newUser2.Password + "\n" + newUser2.Id.ToString());
+
+    List<User> users = new List<User>();
+    // users.Skip;
 }
-tryCatch();
+
+
+TestIOrderedEnumerable();
+
+class User
+{
+    public Guid Id { get; set; }
+    public required string Name { get; set; }   
+    public string? Password { get; set; }
+}
+

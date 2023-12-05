@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Repositories.LessonRepo
+namespace BLL.ViewModels.Lesson
 {
-    internal interface ILessonRepository
+    public class DetailedLessonResponse
     {
+        
     }
 }
- 
