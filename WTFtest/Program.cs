@@ -1,52 +1,41 @@
-﻿using System.Xml.Linq;
-
-var x = "Hiep";
-Console.WriteLine($"Hello, {x}");
-//async Task tryCatch()
+﻿using static System.Console;
+//void TryThrowEx()
 //{
 //    try
 //    {
-//        var text = (await File.ReadAllTextAsync("Note.txt")).Length;
-//        Console.WriteLine(text);
-//        throw new Exception($"{x}");
+//        List<string>? a = null;
+//        if (a == null) throw new ArgumentNullException();
+//        int b = 5;
+//        if (b == 5) throw new ArithmeticException();
 //    }
-//    catch (Exception e)
+//    catch (Exception)
 //    {
-//        throw new Exception(e.Message);
+//    }
+//    finally
+//    {
+//        Console.WriteLine("print final");
 //    }
 //}
+//TryThrowEx();
 
-//await tryCatch();
-string test1 = "a";
-void TestIOrderedEnumerable()
+void NullableTest()
 {
-    User newUser1 = new()
-    {
-        Id = Guid.NewGuid(),
-        Name = "user1",
-        Password = "password",
-    };
-    User newUser2 = new()
-
-    {
-        Id = Guid.NewGuid(),
-        Name = "user2",
-        Password = "password",
-    };
-    Console.WriteLine(newUser1.Name + "\n" + newUser1.Password + "\n" + newUser1.Id.ToString());
-    Console.WriteLine("\n" + newUser2.Name + "\n" + newUser2.Password + "\n" + newUser2.Id.ToString());
-
-    List<User> users = new List<User>();
-    // users.Skip;
+    //Nullable<int> a = null;
+    //int? b = null;
+    //string? c = null;
+    //var s = new string('-', 20);
+    User? user = null;
+    WriteLine($"Name: {user?.Name?.FirstName}");
 }
-
-
-TestIOrderedEnumerable();
-
+NullableTest();
 class User
 {
-    public Guid Id { get; set; }
-    public required string Name { get; set; }   
-    public string? Password { get; set; }
+    public Name? Name { get; set; }
+    public string? Age { get; set; }
 }
 
+class Name
+{
+    public String? FirstName {  get; set; }
+    public string? LastName { get; set;}
+}

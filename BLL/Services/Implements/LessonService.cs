@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Repositories
+namespace BLL.Services.Implements
 {
-    internal class IBaseRepos
+    internal class LessonService
     {
     }
 }

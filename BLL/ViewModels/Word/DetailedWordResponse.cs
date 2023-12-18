@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BLL.ViewModels.Word
 {
-    internal class DetailedWordResponse
+    public class DetailedWordResponse
     {
     }
 }

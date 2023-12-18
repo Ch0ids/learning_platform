@@ -1,15 +1,26 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Services\Lesson\" />
-    <Folder Include="Services\Word\" />
-    <Folder Include="Validators\" />
+    <Compile Remove="Services\Lesson\**" />
+    <Compile Remove="Services\Word\**" />
+    <EmbeddedResource Remove="Services\Lesson\**" />
+    <EmbeddedResource Remove="Services\Word\**" />
+    <None Remove="Services\Lesson\**" />
+    <None Remove="Services\Word\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj" />
   </ItemGroup>
 
 </Project>

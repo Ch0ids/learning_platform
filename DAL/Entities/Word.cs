@@ -2,7 +2,7 @@
 
 namespace DAL.Entities
 {
-    public class Word : BaseEntity
+    public class Word : BaseEntity<Guid>
     {
         public required string Term { get; set; }
         public string? Definition { get; set; }
@@ -12,5 +12,8 @@ namespace DAL.Entities
         public int? Frequency { get; set; }
         public int? RepeatedLeftover { get; set; }
         public bool? IsMarked { get; set; }
+        public Guid LessonId { get; set; }
+
+        public virtual Lesson? Lesson { get; set; }
     }
 }

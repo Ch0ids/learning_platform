@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace DAL.Entities.Common
 {
-    public class BaseEntity
+    public class BaseEntity<TKey>
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Guid Id { get; set; }
+        //[Key]
+        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public virtual required TKey Id { get; set; }
         public DateTime? CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public int Status { get; set; }

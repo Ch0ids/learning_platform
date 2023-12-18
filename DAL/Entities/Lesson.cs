@@ -7,10 +7,11 @@ using DAL.Entities.Common;
 
 namespace DAL.Entities
 {
-    public class Lesson : BaseEntity
+    public class Lesson : BaseEntity<Guid>
     {
         public required string Title { get; set; }
         public string? Description { get; set; }
 
+        public virtual List<Word>? Word { get; set; }
     }
 }

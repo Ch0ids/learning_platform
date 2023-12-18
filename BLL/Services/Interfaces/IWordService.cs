@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Repositories.WordRepo
+namespace BLL.Services.Interfaces
 {
-    internal class WordRepository
+    public interface IWordService
     {
+
     }
 }

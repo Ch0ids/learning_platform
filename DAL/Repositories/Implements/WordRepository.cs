@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Repositories.UserRepo
+namespace DAL.Repositories.Implements
 {
-    internal class UserRepository
+    internal class WordRepository
     {
     }
 }
